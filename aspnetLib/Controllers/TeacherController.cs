@@ -16,5 +16,13 @@ namespace aspnetLib.Controllers
             var teachers = new TeacherService().GetAllTeachers();
             return View(teachers);
         }
+        public ActionResult Delete()
+        {
+            return View();
+        }
+        public ActionResult ConfirmDelete()
+        {
+            return View();
+        }
     }
 }

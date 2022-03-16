@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "..\libraryContr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aspnetLib", "aspnetLib\aspnetLib.csproj", "{1CE23588-78F5-4F05-AADC-12FD7BE8606B}"
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Database", "Database\Database.sqlproj", "{5AC856C7-16A8-4CE0-B39D-B17952DF4249}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,12 @@ Global
 		{1CE23588-78F5-4F05-AADC-12FD7BE8606B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1CE23588-78F5-4F05-AADC-12FD7BE8606B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1CE23588-78F5-4F05-AADC-12FD7BE8606B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AC856C7-16A8-4CE0-B39D-B17952DF4249}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AC856C7-16A8-4CE0-B39D-B17952DF4249}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AC856C7-16A8-4CE0-B39D-B17952DF4249}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{5AC856C7-16A8-4CE0-B39D-B17952DF4249}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AC856C7-16A8-4CE0-B39D-B17952DF4249}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AC856C7-16A8-4CE0-B39D-B17952DF4249}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
