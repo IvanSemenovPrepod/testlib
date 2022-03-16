@@ -1,0 +1,38 @@
+﻿@using datamodel
+@model IEnumerable<vTeacher>
+@{
+    ViewBag.Title = "Index";
+}
+    <table class="table table-hover" id="bookTable">
+        <thead>
+            <tr>
+                <th scope="col">№</th>
+                <th scope="col">Фамилия</th>
+                <th scope="col">Имя</th>
+                <th scope="col">Отчество</th>
+                <th scope="col">Дисциплина</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                int i = 1;
+                foreach (var teacher in Model)
+                {
+                        <tr id="@teacher.Id">
+                            <td>@i</td>
+                            <td>@teacher.FirstName</td>
+                            <td>@teacher.LastName</td>
+                            <td>@teacher.SecondName</td>
+                            <td>@teacher.Lesson</td>
+                            <td>
+                                @Html.ActionLink("Удалить", "Delete",
+                                        new { id = teacher.Id }, new { @id = "myLink" })
+                            </td>
+                            <td><a href="Teacher/Edit/@teacher.Id">Редактировать</a></td>
+                        </tr>
+                    i++;
+                }
+            }
+
+        </tbody>
+    </table>
